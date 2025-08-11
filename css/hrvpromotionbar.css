@@ -1,0 +1,12 @@
+#promotion-bar.top-position {top: 0px; display: block; margin-top: 0px; position: fixed; left: 0px; right: 0px; z-index: 99999; padding-left: 40px; }
+#promotion-bar.bottom-position {bottom: 0px; display: block; margin-bottom: 0px; position: fixed; left: 0px; right: 0px; z-index: 99999;top: auto !important; padding-left: 40px; }
+#promotion-bar .close-bar{text-shadow: 0 1px 0 #fff; font-weight: 700; text-decoration: none !important; float: right; margin-right:5px; position:absolute; top: 50%; -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); right:0px; font-size:30px; opacity: 0.3; color: #fff; z-index: 10; width: 30px; height: 30px; text-align: center; line-height: 25px; }
+#promotion-bar a.close-bar:hover{opacity: 1 !important; }
+.promotion-top {padding-top: 40px; }
+#promotion-bar {text-align: center;padding-right: 40px;visibility: hidden;opacity: 0;  -ms-transform: translate(0, -100%);  -webkit-transform: translate(0, -100%);  transform: translate(0, -100%);  }
+.promotion-show #promotion-bar{ visibility: visible !important;opacity: 1 !important; margin-top: 0px;  -ms-transform: translate(0, 0);  -webkit-transform: translate(0, 0);  transform: translate(0, 0);  }
+#promotion-bar .bar-wrapper {vertical-align: middle; padding: 8px 0; }
+#promotion-bar .bar-content {margin: 0; display: inline-block; margin-right: 15px;line-height: 1.4;vertical-align: middle; }
+#promotion-bar .action-button {border: medium none; border-radius: 4px; box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.1); cursor: pointer; margin-left: 20px; margin-right: 1px; padding: 5px 20px; opacity: 1; outline: none !important; text-decoration: none !important; vertical-align: middle; display: inline-block; }
+html,#promotion-bar{  transition: all 0.3s ease-in-out 0s;  -moz-transition: all 0.3s ease-in-out 0s;  -o-transition: all 0.3s ease-in-out 0s;  -webkit-transition: all 0.3s ease-in-out 0s;  -ms-transition: all 0.3s ease-in-out 0s;  }
+#promotion-bar .bar-wrapper { display: flex; justify-content: center; align-items: center; } .promotion-bar__fb-like { background-color: #1877f2; color: white !important; border-radius: 3px; font-size: 11px; height: 20px; padding: 0 6px; display: flex; align-items: center; cursor: pointer; font-weight: bold; margin-right: 5px; text-decoration: none; font-family: Arial !important; font-weight: bold; } .promotion-bar__fb-like svg { margin-right: 2px; margin-top: -2px; }
