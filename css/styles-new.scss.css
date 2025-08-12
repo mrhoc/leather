@@ -604,19 +604,19 @@ footer .top-ft-wanda .newletter form .btn {
     .product-block .product-img .product-icon-action {
       position: absolute;
       top: auto;
-      bottom: -50px;
+      bottom: 0px;
       background-color: transparent;
       display: flex;
       flex-wrap: wrap;
-      width: calc(100% + 5px);
+      width: calc(100%);
       justify-content: space-between;
       right: auto;
       left: 0;
       z-index: 10;
-      margin-left: -5px; }
+      margin-left: 0px; }
       .product-block .product-img .product-icon-action > div {
         width: 50%;
-        padding-left: 5px; }
+        padding-left: 0px; }
         .product-block .product-img .product-icon-action > div > button {
           color: #fff;
           display: inline-block;

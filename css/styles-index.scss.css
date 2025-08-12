@@ -221,20 +221,20 @@
         margin: 0; } }
     .nav li a {
       padding: 10px;
-      border-radius: 20px;
+      border-radius: 4px;
       font-weight: 500;
       text-transform: uppercase;
       color: #636363;
       letter-spacing: 0;
       font-weight: 500;
-      border: 1px dashed transparent; }
+      border: 1px solid transparent; }
       @media (max-width: 767px) {
         .nav li a {
           padding: 7px 10px; } }
       .nav li a.active {
         color: var(--colorshophover);
         font-weight: 600;
-        border: 1px dashed var(--colorshophover); }
+        border: 1px solid var(--colorshophover); }
 
 .tab-result .tab-pane {
   display: none; }
