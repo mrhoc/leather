@@ -1,3 +1,17 @@
+section{
+    padding: 64px 0!important;
+}
+.top-title{
+    margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+    section{
+        padding: 48px 0!important;
+    }
+    .top-title{
+        margin-bottom: 30px;
+    }
+}
 
 #home-slider {
     position: relative;
@@ -68,12 +82,12 @@
     background: #fff;
 }
 
-#collection-new .top-title .title-section span {
+ .top-title .title-section span {
     position: relative;
     display: inline-block;
 }
 
-#collection-new .top-title .title-section span:after {
+ .top-title .title-section span:after {
     content: "";
     position: absolute;
     left: 50%;
