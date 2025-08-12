@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta content='width=device-width,user-scalable=0' name='viewport' />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Chi tiết sản phẩm - Corp LEATHER</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=fallback" rel="preload stylesheet" as="style">
+  <link href="./css/plugin-style.css?v=51" rel="preload stylesheet" as="style" type="text/css">
+  <link href="./css/styles-new.scss.css?v=51" rel="preload stylesheet" as="style" type="text/css">
+  <link href="./css/styles-index.scss.css?v=51" rel="preload stylesheet" as="style" type="text/css">
+  <link href="./css/custom.css" rel="stylesheet" type="text/css">
+
+</head>
+<body id="wandave-theme" class="detail">
+  <header id="header" class="site-header">
+    <div class="container d-flex d-flex-center" style="padding:12px 0;">
+      <div class="logo">
+        <a href="index.html"><img height="30" src="./img/logo1.png" alt="LEATHER"></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumb">
+      <div class="container">
+        <a href="index.html">Trang chủ</a>
+        <span>/</span>
+        <a href="collection-detail.html">FOR MEN</a>
+        <span>/</span>
+        <span>Clutch Nam - Túi Xách Tay Nam - Da Cá Sấu</span>
+      </div>
+    </nav>
+
+    <section id="product-detail">
+      <div class="container product-detail-wrap">
+        <div class="product-gallery">
+          <div class="product-media-main">
+            <img src="./img/close-up-engraving-art-tools-1-2048x1365.jpg" alt="Product main" class="media-main-img">
+          </div>
+          <ul class="product-media-thumbs">
+            <li><img src="./img/close-up-engraving-art-tools-1-2048x1365.jpg" alt="thumb 1"></li>
+            <li><img src="./img/modal-banner.jpg" alt="thumb 2"></li>
+            <li><img src="./img/banner_mobile2_large.jpg" alt="thumb 3"></li>
+          </ul>
+        </div>
+
+        <div class="product-info">
+          <h1 class="product-title">Clutch Nam - Túi Xách Tay Nam - Da Cá Sấu</h1>
+          <div class="product-price">19,600,000₫</div>
+          <p class="product-shortdesc">Thiết kế tối giản, chất liệu da thật cao cấp, hoàn thiện thủ công tinh xảo. Phù hợp cho phong cách lịch lãm.</p>
+
+          <div class="product-options">
+            <div class="option-group qty">
+              <label>Số lượng</label>
+              <div class="qty-control">
+                <button class="qty-btn" aria-label="Giảm">-</button>
+                <input type="number" min="1" value="1" aria-label="Số lượng" />
+                <button class="qty-btn" aria-label="Tăng">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-actions">
+            <a class="btn btn-outline" href="#specs">Xem thông tin chi tiết</a>
+          </div>
+
+          <ul class="product-highlights">
+            <li><i class="fa fa-check"></i> Da thật 100% chọn lọc</li>
+            <li><i class="fa fa-check"></i> Bảo hành 12 tháng</li>
+            <li><i class="fa fa-check"></i> Đổi trả trong 7 ngày</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container product-extra" id="specs">
+        <div class="product-tabs">
+          <button class="tab-link active" data-target="#tab-desc">Mô tả</button>
+          <button class="tab-link" data-target="#tab-material">Chất liệu</button>
+          <button class="tab-link" data-target="#tab-care">Bảo quản</button>
+        </div>
+        <div class="tab-contents">
+          <div class="tab-panel show" id="tab-desc">
+            Sản phẩm được thiết kế với triết lý tối giản, chú trọng công năng và cảm giác sử dụng. Các chi tiết được xử lý tỉ mỉ, tạo nên tính thẩm mỹ bền vững theo thời gian.
+          </div>
+          <div class="tab-panel" id="tab-material">
+            Da thật nhập khẩu, bề mặt xử lý chống xước nhẹ, đường chỉ may thủ công.
+          </div>
+          <div class="tab-panel" id="tab-care">
+            Tránh tiếp xúc nước mưa lâu, bảo quản nơi khô thoáng, dùng kem dưỡng da chuyên dụng định kỳ.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mg-top-30 mg-0 pd-bt-50-mb bgft">
+    <div class="container" style="padding:24px 0; text-align:center;">
+      © 2025 Corp LEATHER
+    </div>
+  </footer>
+
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/custome-js.js"></script>
+  <script>
+    // Simple tabs toggle for product extra
+    $(document).on('click', '.product-tabs .tab-link', function(){
+      const target = $(this).data('target');
+      $('.product-tabs .tab-link').removeClass('active');
+      $(this).addClass('active');
+      $('.tab-contents .tab-panel').removeClass('show');
+      $(target).addClass('show');
+    });
+    // Quantity controls
+    $(document).on('click', '.qty-btn', function(){
+      const $input = $(this).siblings('input[type="number"]');
+      let val = parseInt($input.val()||1, 10);
+      if($(this).text()==='+') val += 1; else val = Math.max(1, val-1);
+      $input.val(val);
+    });
+    // Gallery thumbs
+    $(document).on('click', '.product-media-thumbs img', function(){
+      const src = $(this).attr('src');
+      $('.product-media-main .media-main-img').attr('src', src);
+    });
+  </script>
+</body>
+</html>
+
+
