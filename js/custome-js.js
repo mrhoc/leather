@@ -8,6 +8,13 @@ $(document).ready(function () {
         $('#wandave-theme').removeClass('menu-active');
         
     });
+    if($(window).width() < 992) {
+        $('.mb-menu li > a').on('click', function (e) {
+            e.preventDefault();
+            $(this).parent().toggleClass('active');
+            $(this).closest('li').find('.sub_menu_dropdown').slideToggle('fast');
+        })
+    }
 })
 
 // $(document).on('click', '.menu-active #site-overlay,#wanda-close-handle', function (event) {

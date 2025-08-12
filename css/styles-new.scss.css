@@ -948,7 +948,7 @@ footer .top-ft-wanda .social-footer li {
         display: inline-block;
         color: var(--colortextmenumb);
         font-size: 14px;
-        padding: 10px 20px 10px 10px;
+        padding: 20px 20px 20px 20px;
         position: relative; }
         #menu-mobile .mb-menu li a .hot-label {
           position: absolute;
@@ -1015,7 +1015,9 @@ footer .top-ft-wanda .social-footer li {
       height: 35px;
       cursor: pointer;
       display: inline-block;
-      position: relative; }
+      position: relative;
+            top: 10px;
+        right: 5px; }
       .wanda-close-handle .mb-menu-cls .bar {
         position: relative;
         top: 18px;
