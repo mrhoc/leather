@@ -1,0 +1,14 @@
+#home-slider{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 63px);
+    overflow: hidden;
+    margin: 0 auto;
+    background: #f5f5f5 url('../img/close-up-engraving-art-tools-1-2048x1365.jpg') no-repeat center center;    
+}
+@media (max-width: 991px) {
+   
+    .sub_menu_dropdown{
+        display: none;
+    }
+}
